@@ -2,11 +2,11 @@ version: '3'
 
 services:
   webos:
-    image: webkochar
-    container_name: web2
+    image: devweb
+    container_name: web1
     network_mode: "bridge"
     volumes:
-      - web_storage:/var/www/html
+      - web1:/var/www/html
     command: /bin/bash
     tty: true
     stdin_open: true
@@ -24,9 +24,9 @@ services:
     restart: always
     network_mode: "bridge"
     environment:
-      MYSQL_ROOT_PASSWORD: ashkochar
-      MYSQL_USER: Ashishkochar
-      MYSQL_PASSWORD: kochar
+      MYSQL_ROOT_PASSWORD: chouhan
+      MYSQL_USER: Dharmvatsal
+      MYSQL_PASSWORD: Singh
       MYSQL_DATABASE: mydbos
 
 volumes:
